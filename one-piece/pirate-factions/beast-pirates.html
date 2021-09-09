@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="(prefers-color-scheme:light)"
+        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.50/dist/themes/light.css">
+    <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.50/dist/themes/dark.css"
+        onload="document.documentElement.classList.add('sl-theme-dark');">
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.50/dist/shoelace.js"></script>
+    <title>Beast Pirates</title>
+</head>
+
+<body>
+    <h1>Beast Pirates:</h1>
+    <div class="emperor">
+        <sl-card class="card-overview">
+            <img slot="image" src="../images/kaido.png" alt="Kaido">
+            <strong>Kaido</strong><br>
+            <p>Kaido is the captain of the Beast Pirates and one of the four Emperor's of the sea.</p>
+            <br>
+            <small>Emperor of Sea</small>
+            <div slot="footer">
+                <sl-button type="primary" pill>More Info</sl-button>
+            </div>
+        </sl-card>
+    </div>
+
+    <style>
+        body {
+            background-color: rgb(163, 109, 47);
+        }
+
+        h1 {
+            color: snow;
+        }
+
+        h2 {
+            color: snow;
+        }
+
+        p {
+            color: snow;
+        }
+
+        .emperor {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <script src="../styles/index.js"></script>
+</body>
+
+</html>

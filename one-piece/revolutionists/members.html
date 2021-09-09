@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="(prefers-color-scheme:light)"
+        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.50/dist/themes/light.css">
+    <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.50/dist/themes/dark.css"
+        onload="document.documentElement.classList.add('sl-theme-dark');">
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.50/dist/shoelace.js"></script>
+    <title>Members</title>
+</head>
+
+<body>
+    <h1>Members:</h1>
+    <div class="top">
+        <sl-card class="card-overview">
+            <img slot="image" src="../images/dragon.png" alt="Supreme Commander">
+            <strong>Dragon</strong><br>
+            <p>Dragon is the infamous Supreme Commander of the Revolutionary Army and is trying to overthrow the World
+                Government.
+                Truly the worlds greatest criminal.</p>
+            <br>
+            <small>Supreme Commander</small>
+            <div slot="footer">
+                <sl-button type="primary" pill>More Info</sl-button>
+            </div>
+        </sl-card>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="second">
+        <sl-card class="card-overview">
+            <img slot="image" src="../images/sabo.png" alt="Chief of Staff">
+            <strong>Sabo</strong><br>
+            <p>Sabo is the Chief of Staff of the Revolutionists, making him the No.2 of the Revolutionary Army.</p>
+            <br>
+            <small>Chief of Staff</small>
+            <div slot="footer">
+                <sl-button type="primary" pill>More Info</sl-button>
+            </div>
+        </sl-card>
+    </div>
+    <br>
+    <br>
+    <div class="commanders">
+        <sl-card class="card-overview">
+            <img slot="image" src="../images/belo-betty.png" alt="Belo Betty">
+            <strong>Belo Betty</strong><br>
+            <p>Belo Betty is the commander of the East Army in the Revolutionary Army.</p>
+            <br>
+            <small>Commander: East Army</small>
+            <div slot="footer">
+                <sl-button type="primary" pill>More Info</sl-button>
+            </div>
+        </sl-card>
+        <sl-card class="card-overview">
+            <img slot="image" src="../images/morley.png" alt="Morley">
+            <strong>Morley of Fur</strong><br>
+            <p>Morley is the commander of the West Army in the Revolutionary Army.</p>
+            <br>
+            <small>Commander: West Army</small>
+            <div slot="footer">
+                <sl-button type="primary" pill>More Info</sl-button>
+            </div>
+        </sl-card>
+        <sl-card class="card-overview">
+            <img slot="image" src="../images/karasu.png" alt="Karasu">
+            <strong>Karasu</strong><br>
+            <p>Karasu is the commander of the North Army in the Revolutionary Army.</p>
+            <br>
+            <small>Commander: North Army</small>
+            <div slot="footer">
+                <sl-button type="primary" pill>More Info</sl-button>
+            </div>
+        </sl-card>
+        <sl-card class="card-overview">
+            <img slot="image" src="../images/lindbergh.png" alt="Lindbergh">
+            <strong>Lindbergh</strong><br>
+            <p>Lindbergh is the commander of the South Army in the Revolutionary Army.</p>
+            <br>
+            <small>Commander: South Army</small>
+            <div slot="footer">
+                <sl-button type="primary" pill>More Info</sl-button>
+            </div>
+        </sl-card>
+        <sl-card class="card-overview">
+            <img slot="image" src="../images/emporio-ivankov.png" alt="Ivan">
+            <strong>Emporio Ivankov</strong><br>
+            <p>Emporio Ivankov is the commander of the G Army in the Revolutionary Army.</p>
+            <br>
+            <small>Commander: G Army</small>
+            <div slot="footer">
+                <sl-button type="primary" pill>More Info</sl-button>
+            </div>
+        </sl-card>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <sl-card class="card-overview">
+            <img slot="image" src="../images/koala.png" alt="Koala">
+            <strong>Koala</strong><br>
+            <p>Koala is an officer of the Revolutionary Army. Formerly a slave, she was set free Fisher Tiger's rampage
+                on
+                Mariejois.</p>
+            <br>
+            <small>Officer</small>
+            <div slot="footer">
+                <sl-button type="primary" pill>More Info</sl-button>
+            </div>
+        </sl-card>
+    </div>
+    <style>
+        body {
+            background-color: #244F2A;
+        }
+
+        h1 {
+            color: snow;
+        }
+
+        h2 {
+            color: snow;
+        }
+
+        h3 {
+            color: snow;
+        }
+
+        p {
+            color: snow;
+        }
+
+        .top {
+            display: flex;
+            justify-content: center;
+        }
+
+        .second {
+            display: flex;
+            justify-content: center;
+        }
+
+        .commanders {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card-overview {
+            max-width: 300px;
+        }
+
+        .card-overview small {
+            color: snow;
+        }
+
+        .card-overview strong {
+            color: snow;
+        }
+
+        .card-overview [slot="footer"] {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+    <script src="../styles/index.js"></script>
+</body>
+
+</html>

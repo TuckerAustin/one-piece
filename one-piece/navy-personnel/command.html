@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" media="(prefers-color-scheme:light)"
+        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.50/dist/themes/light.css">
+    <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.50/dist/themes/dark.css"
+        onload="document.documentElement.classList.add('sl-theme-dark');">
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.50/dist/shoelace.js"></script>
+    <title>Navy Personnel</title>
+</head>
+
+<body>
+    <h1>Chain-of-Command:</h1>
+    <div class="fleet">
+        <sl-card class="card-overview">
+            <img slot="image" src="../images/sakazuki.png" alt="Sakazuki">
+            <strong>Sakazuki</strong><br>
+            <p>Fleet Admiral Sakazuki is the greatest Commander that has ever graced Navy HQ.</p>
+            <br>
+            <small>Fleet Admiral</small>
+            <div slot="footer">
+                <sl-button type="primary" pill>More Info</sl-button>
+            </div>
+        </sl-card>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="admirals">
+        <sl-card class="card-overview">
+            <img slot="image" src="../images/borsalino.png" alt="Borsalino">
+            <strong>Borsalino</strong><br>
+            <p>Admiral Borsalino, better known as Kizaru, is an Admiral in the Marines.</p>
+            <br>
+            <small>Admiral</small>
+            <div slot="footer">
+                <sl-button type="primary" pill>More Info</sl-button>
+            </div>
+        </sl-card>
+        <sl-card class="card-overview">
+            <img slot="image" src="../images/issho.png" alt="Issho">
+            <strong>Issho</strong><br>
+            <p>Admiral Issho, better known as Fujitora, is an Admiral in the Marines.</p>
+            <br>
+            <small>Admiral</small>
+            <div slot="footer">
+                <sl-button type="primary" pill>More Info</sl-button>
+            </div>
+        </sl-card>
+        <sl-card class="card-overview">
+            <img slot="image" src="../images/ryokugyu.png" alt="Ryokugyu">
+            <strong>Ryokugyu</strong><br>
+            <p>Admiral Ryokugyu is an Admiral in the Marines.</p>
+            <br>
+            <small>Admiral</small>
+            <div slot="footer">
+                <sl-button type="primary" pill>More Info</sl-button>
+            </div>
+        </sl-card>
+    </div>
+
+    <style>
+        body {
+            background-color: snow;
+        }
+
+        h1 {
+            color: snow;
+        }
+
+        h2 {
+            color: snow;
+        }
+
+        p {
+            color: snow;
+        }
+
+        .fleet {
+            display: flex;
+            justify-content: center;
+        }
+
+        .admirals {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .card-overview {
+            max-width: 300px;
+        }
+
+        .card-overview small {
+            color: snow;
+        }
+
+        .card-overview strong {
+            color: snow;
+        }
+
+        .card-overview [slot="footer"] {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+
+    <script src="../styles/index.js"></script>
+</body>
+
+</html>

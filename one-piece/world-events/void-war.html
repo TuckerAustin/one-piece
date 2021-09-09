@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="(prefers-color-scheme:light)"
+        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.50/dist/themes/light.css">
+    <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.50/dist/themes/dark.css"
+        onload="document.documentElement.classList.add('sl-theme-dark');">
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.50/dist/shoelace.js"></script>
+    <title>100 Year Void</title>
+</head>
+
+<body>
+    <h6>The 100 Year Void is</h6>
+    <sl-input class="custom-input" required pattern="RRRRRRRRRRRRRRRRRRRR115646511561615444">
+        <small slot="help-text">Enter your password to continue</small>
+    </sl-input>
+    <sl-button type="danger">Enter</sl-button>
+
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        h6 {
+            color: white;
+        }
+
+        .custom-input[invalid]:not([disabled])::part(label),
+        .custom-input[invalid]:not([disabled])::part(help-text) {
+            color: rgb(var(--sl-color-danger-600));
+        }
+
+        .custom-input[invalid]:not([disabled])::part(base) {
+            border-color: rgb(var(--sl-color-danger-500));
+        }
+
+        .custom-input[invalid]:focus-within::part(base) {
+            box-shadow: 0 0 0 var(--sl-focus-ring-width) rgb(var(--sl-color-danger-500) / var(--sl-focus-ring-alpha));
+        }
+    </style>
+
+    <script src="../styles/index.js"></script>
+</body>
+
+</html>
